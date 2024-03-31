@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0OEw4C19+J10p+jUjjbqLl2juG8DJkCFYY2P2lqZpHQ=",
+  "Source": "Platform_Service",
+  "BasePath": "_content/Platform_Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

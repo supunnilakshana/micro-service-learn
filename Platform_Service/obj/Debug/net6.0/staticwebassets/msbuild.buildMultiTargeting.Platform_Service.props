@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Platform_Service.props" />
+</Project>
