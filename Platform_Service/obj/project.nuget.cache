@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "puEq6MTgcEaSPGySGPrAcrin5ZwHGc/oo1HNXxBsfhXu7tH1QbruhbQn7EojYFMC2Tj1Hfk6TYArcWM9295xvw==",
+  "dgSpecHash": "bY2KSgqMfRWK/poNgXDQxevzUfDrIl7J1Vv4MR8gyOV4xax23QzLf1FKccxbXLacejdM2Tikmd1TPRFmqNg0Wg==",
   "success": true,
-  "projectFilePath": "C:\\Supun\\Professional\\Development\\.net core\\Platform_Service\\Platform_Service.csproj",
+  "projectFilePath": "C:\\Supun\\Professional\\Development\\.net core\\MicroServices\\Platform_Service\\Platform_Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\supun\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\supun\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

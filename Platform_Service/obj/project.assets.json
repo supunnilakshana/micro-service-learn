@@ -2559,11 +2559,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Supun\\Professional\\Development\\.net core\\Platform_Service\\Platform_Service.csproj",
+      "projectUniqueName": "C:\\Supun\\Professional\\Development\\.net core\\MicroServices\\Platform_Service\\Platform_Service.csproj",
       "projectName": "Platform_Service",
-      "projectPath": "C:\\Supun\\Professional\\Development\\.net core\\Platform_Service\\Platform_Service.csproj",
+      "projectPath": "C:\\Supun\\Professional\\Development\\.net core\\MicroServices\\Platform_Service\\Platform_Service.csproj",
       "packagesPath": "C:\\Users\\supun\\.nuget\\packages\\",
-      "outputPath": "C:\\Supun\\Professional\\Development\\.net core\\Platform_Service\\obj\\",
+      "outputPath": "C:\\Supun\\Professional\\Development\\.net core\\MicroServices\\Platform_Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\supun\\AppData\\Roaming\\NuGet\\NuGet.Config",

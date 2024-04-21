@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Platform_Service.Data;
+using Platform_Service.SyncDataService.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,9 +12,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("InMem"));
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
+builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+
 var app = builder.Build();
+System.Console.WriteLine($"Command Service End point {app.Configuration["CommandService"]}");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
