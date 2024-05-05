@@ -5,7 +5,7 @@ namespace CommandsService.Controllers
 {
     [Route("api/c/[controller]")]
     [ApiController]
-    public class PlatfromsController : ControllerBase
+    public class PlatformsController : ControllerBase
     {
 
         [HttpPost]
