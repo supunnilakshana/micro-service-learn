@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Platform_Service.AysncDataServices;
 using Platform_Service.Data;
 using Platform_Service.SyncDataService.Http;
 using System;
@@ -15,6 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
 
 var environment = builder.Environment;
 var configuration = builder.Configuration;
@@ -47,6 +49,6 @@ System.Console.WriteLine($"Command Service End point {app.Configuration["Command
 app.UseAuthorization();
 
 app.MapControllers();
-PrepDb.PrepPopulation(app,environment.IsProduction());
+PrepDb.PrepPopulation(app, environment.IsProduction());
 
 app.Run();

@@ -1,3 +1,5 @@
+using System.Text;
+using System.Text.Json;
 using Platform_Service.Dto;
 using RabbitMQ.Client;
 
@@ -27,10 +29,10 @@ namespace Platform_Service.AysncDataServices
                 Console.WriteLine("--> Connected to MessageBus");
                 ListenForMessage();
             }
-            catch (System.Exception)
+            catch (Exception ex)
             {
+                System.Console.WriteLine($"--> Could not connect to the message bus: {ex.Message}");
 
-                throw;
             }
 
 
@@ -40,9 +42,37 @@ namespace Platform_Service.AysncDataServices
 
         public void PublishNewPlatform(PlatformPublishDto platformPublishDto)
         {
-            throw new NotImplementedException();
+            var message = JsonSerializer.Serialize(platformPublishDto);
+            if (_connection.IsOpen)
+            {
+                Console.WriteLine("--> RabbitMQ Connection Open, sending message...");
+                SendMessage(message);
+            }
+            else
+            {
+                Console.WriteLine("--> RabbitMQ Connection is closed, not sending");
+            }
         }
 
+        private void SendMessage(string message)
+        {
+            var body = Encoding.UTF8.GetBytes(message);
+            _channel.BasicPublish(exchange: "trigger",
+                                  routingKey: "",
+                                  basicProperties: null,
+                                  body: body);
+            Console.WriteLine($"--> Platform Publish to RabbitMQ: {message}");
+        }
+
+        public void Dispose()
+        {
+            Console.WriteLine("--> MessageBus Disposed");
+            if (_channel.IsOpen)
+            {
+                _channel.Close();
+                _connection.Close();
+            }
+        }
 
         private void RabbitMQ_ConnectionShutdown(object? sender, ShutdownEventArgs e)
         {
@@ -51,7 +81,7 @@ namespace Platform_Service.AysncDataServices
         }
         private void ListenForMessage()
         {
-            throw new NotImplementedException();
+
         }
 
 

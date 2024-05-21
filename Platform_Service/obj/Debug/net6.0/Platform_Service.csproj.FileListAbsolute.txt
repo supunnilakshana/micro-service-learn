@@ -139,3 +139,5 @@ C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\obj\D
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\obj\Debug\net6.0\Platform_Service.pdb
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\obj\Debug\net6.0\Platform_Service.genruntimeconfig.cache
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\obj\Debug\net6.0\ref\Platform_Service.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\System.Threading.Channels.dll
