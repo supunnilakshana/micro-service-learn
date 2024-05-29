@@ -6,25 +6,22 @@ using CommandsService.Dtos;
 using CommandsService.EventProcessing;
 using CommandsService.Models;
 
-namespace NamespaceName.EventProcessing
+namespace CommandsService.EventProcessing
 {
 
     public class EventProcessor : IEventProcessor
     {
-        private readonly ICommandRepo _repository;
+
         private readonly IMapper _mapper;
-        private readonly ILogger<EventProcessor> _logger;
         private readonly IServiceScopeFactory _serviceScopeFactory;
-        public EventProcessor(ICommandRepo repository, IMapper mapper, ILogger<EventProcessor> logger, IServiceScopeFactory serviceScopeFactory)
+        public EventProcessor(IMapper mapper, IServiceScopeFactory serviceScopeFactory)
         {
-            _repository = repository;
             _mapper = mapper;
-            _logger = logger;
             _serviceScopeFactory = serviceScopeFactory;
         }
         public void ProcessEvent(string message)
         {
-            _logger.LogInformation($"ProcessEvent Method Started");
+            System.Console.WriteLine("ProcessEvent Method Started");
             var eventType = DetermineEvent(message);
             switch (eventType)
             {
@@ -32,15 +29,15 @@ namespace NamespaceName.EventProcessing
                     AddPlatform(message);
                     break;
                 default:
-                    _logger.LogInformation($"ProcessEvent Method Undetermined Event Type");
+                    System.Console.WriteLine("ProcessEvent Method Ended");
                     break;
             }
         }
         private EventType DetermineEvent(string notificationMessage)
         {
-            _logger.LogInformation($"DetermineEvent Method Started");
+            System.Console.WriteLine("DetermineEvent Method Started");
             var eventType = JsonSerializer.Deserialize<GenericEventDto>(notificationMessage);
-            _logger.LogInformation($"DetermineEvent Method Ended");
+            System.Console.WriteLine($"DetermineEvent Method Ended");
             return eventType?.Event switch
             {
                 "Platform_Published" => EventType.PlatformPublishedEvent,
@@ -57,20 +54,20 @@ namespace NamespaceName.EventProcessing
                 try
                 {
                     var platform = _mapper.Map<Platform>(platformPublishedDto);
-                    if (!_repository.ExternalPlatformExists(platform.ExternalId))
+                    if (!repository.ExternalPlatformExists(platform.ExternalId))
                     {
-                        _repository.CreatePlatform(platform);
-                        _repository.SaveChanges();
-                        _logger.LogInformation($"Platform added");
+                        repository.CreatePlatform(platform);
+                        repository.SaveChanges();
+                        System.Console.WriteLine($"Platform added");
                     }
                     else
                     {
-                        _logger.LogInformation($"Platform already exists");
+                        System.Console.WriteLine($"Platform already exists");
                     }
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError($"Platform added failed: {ex.Message}");
+                    System.Console.WriteLine($"Platform added failed: {ex.Message}");
                 }
             }
 

@@ -2,7 +2,7 @@ using CommandsService.AsyncDataServices;
 using CommandsService.Data;
 using CommandsService.EventProcessing;
 using Microsoft.EntityFrameworkCore;
-using NamespaceName.EventProcessing;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
