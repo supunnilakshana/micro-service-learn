@@ -40,3 +40,6 @@ C:\Supun\Professional\Development\.net core\MicroServices\CommandsService\obj\De
 C:\Supun\Professional\Development\.net core\MicroServices\CommandsService\obj\Debug\net6.0\CommandsService.pdb
 C:\Supun\Professional\Development\.net core\MicroServices\CommandsService\obj\Debug\net6.0\CommandsService.genruntimeconfig.cache
 C:\Supun\Professional\Development\.net core\MicroServices\CommandsService\obj\Debug\net6.0\ref\CommandsService.dll
+C:\Supun\Professional\Development\.net core\MicroServices\CommandsService\bin\Debug\net6.0\appsettings.Production.json
+C:\Supun\Professional\Development\.net core\MicroServices\CommandsService\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Supun\Professional\Development\.net core\MicroServices\CommandsService\bin\Debug\net6.0\System.Threading.Channels.dll
