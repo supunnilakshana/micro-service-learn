@@ -77,6 +77,13 @@ C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\D
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Platform_Service.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Platform_Service.pdb
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\AutoMapper.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Grpc.AspNetCore.Server.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Grpc.Core.Api.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Grpc.Net.Client.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Grpc.Net.Common.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Humanizer.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -95,6 +102,7 @@ C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\D
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\RabbitMQ.Client.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -105,6 +113,7 @@ C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\D
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\System.Runtime.Caching.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\System.Threading.Channels.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\System.Windows.Extensions.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -139,5 +148,3 @@ C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\obj\D
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\obj\Debug\net6.0\Platform_Service.pdb
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\obj\Debug\net6.0\Platform_Service.genruntimeconfig.cache
 C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\obj\Debug\net6.0\ref\Platform_Service.dll
-C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\RabbitMQ.Client.dll
-C:\Supun\Professional\Development\.net core\MicroServices\Platform_Service\bin\Debug\net6.0\System.Threading.Channels.dll

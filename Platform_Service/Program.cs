@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Platform_Service;
 using Platform_Service.AysncDataServices;
 using Platform_Service.Data;
+using Platform_Service.SyncDataService.Grpc;
 using Platform_Service.SyncDataService.Http;
 using System;
 
@@ -17,6 +19,8 @@ builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
+builder.Services.AddGrpc();
+
 
 var environment = builder.Environment;
 var configuration = builder.Configuration;
@@ -49,6 +53,16 @@ System.Console.WriteLine($"Command Service End point {app.Configuration["Command
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapGrpcService<GrpcPlatformService>();
+app.MapGet("/protos/platform.proto", async context =>
+{
+    await context.Response.WriteAsync(
+        File.ReadAllText("Protos/platform.proto")
+    );
+});
+
+
+
 PrepDb.PrepPopulation(app, environment.IsProduction());
 
 app.Run();
